@@ -2,7 +2,7 @@
   <img src="assets/icon.png" width="120" height="120" alt="Samsung Calendar" />
 </p>
 
-<h1 align="center">Samsung Calendar — One UI 9 Port</h1>
+<h1 align="center">Samsung Calendar (One UI 9)</h1>
 
 <p align="center">
   <code>com.samsung.android.calendar</code> · v12.7.06.13 · Android 12+ (API 31–36) · No Root Required
