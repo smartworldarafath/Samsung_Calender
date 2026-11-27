@@ -1,18 +1,34 @@
+<div align="center" id="overview">
+  <img src="assets/icon.png" width="116" height="116" alt="Samsung Calendar" />
+  <br/>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/hero-title.svg"><img src="assets/readme/light/hero-title.svg" alt="Samsung Calendar (One UI 9) — com.samsung.android.calendar v12.7.06.13" width="760"></picture>
+</div>
+
 <p align="center">
-  <img src="assets/icon.png" width="120" height="120" alt="Samsung Calendar" />
+  <a href="../../releases/latest"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/btn-download.svg"><img src="assets/readme/light/btn-download.svg" alt="Download Latest APK" height="52"></picture></a>
+  <a href="#how-this-port-works"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/btn-architecture.svg"><img src="assets/readme/light/btn-architecture.svg" alt="Architecture" height="52"></picture></a>
+  <a href="#screenshots"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/btn-screenshots.svg"><img src="assets/readme/light/btn-screenshots.svg" alt="Screenshots" height="52"></picture></a>
+  <a href="#building--patching-notes"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/btn-patching.svg"><img src="assets/readme/light/btn-patching.svg" alt="Patching Notes" height="52"></picture></a>
 </p>
 
-<h1 align="center">Samsung Calendar (One UI 9)</h1>
-
 <p align="center">
-  <code>com.samsung.android.calendar</code> · v12.7.06.13 · Android 12+ (API 31–36) · No Root Required
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-oneui.svg"><img src="assets/readme/light/badge-oneui.svg" alt="One UI 9 Base" height="32"></picture>
+  <a href="../../releases/latest"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-version.svg"><img src="assets/readme/light/badge-version.svg" alt="Version 12.7.06.13" height="32"></picture></a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-sdk.svg"><img src="assets/readme/light/badge-sdk.svg" alt="Android 12+ (API 31–36)" height="32"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-noroot.svg"><img src="assets/readme/light/badge-noroot.svg" alt="No Root Required" height="32"></picture>
+  <a href="#how-this-port-works"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-calbridge.svg"><img src="assets/readme/light/badge-calbridge.svg" alt="CalendarProvider Bridge" height="32"></picture></a>
+  <a href="#how-this-port-works"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-120hz.svg"><img src="assets/readme/light/badge-120hz.svg" alt="120Hz Refresh Lock" height="32"></picture></a>
+  <a href="#how-this-port-works"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-spr.svg"><img src="assets/readme/light/badge-spr.svg" alt="SPR\0 Rasterized" height="32"></picture></a>
 </p>
 
 <p align="center">
-  <a href="../../releases/latest">Download Latest APK</a> ·
-  <a href="#how-this-port-works">Architecture</a> ·
-  <a href="#screenshots">Screenshots</a> ·
-  <a href="#building--patching-notes">Patching Notes</a>
+  <a href="#overview"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/tab-overview.svg"><img src="assets/readme/light/tab-overview.svg" alt="Overview" height="34"></picture></a>
+  <a href="#screenshots"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/tab-screenshots.svg"><img src="assets/readme/light/tab-screenshots.svg" alt="Screenshots" height="34"></picture></a>
+  <a href="#how-this-port-works"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/tab-architecture.svg"><img src="assets/readme/light/tab-architecture.svg" alt="Architecture" height="34"></picture></a>
+  <a href="#installation"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/tab-install.svg"><img src="assets/readme/light/tab-install.svg" alt="Installation" height="34"></picture></a>
+  <a href="#what-works--known-limitations"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/tab-compat.svg"><img src="assets/readme/light/tab-compat.svg" alt="Compatibility" height="34"></picture></a>
+  <a href="#building--patching-notes"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/tab-build.svg"><img src="assets/readme/light/tab-build.svg" alt="Patching Notes" height="34"></picture></a>
+  <a href="#build-metadata"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/tab-metadata.svg"><img src="assets/readme/light/tab-metadata.svg" alt="Metadata" height="34"></picture></a>
 </p>
 
 ---
@@ -21,7 +37,7 @@ Stock One UI system apps aren't built to run outside Samsung's firmware. If you 
 
 This project takes **Samsung Calendar `12.7.06.13`** from One UI 9 and makes it a self-contained, daily-usable APK for **any Android 12+ device** — keeping Samsung's Month/Week/Agenda UI, gesture feel, and icons intact while translating everything under the hood to standard AOSP.
 
-## Screenshots
+<h2 id="screenshots"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-screenshots.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-screenshots.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-screenshots.svg"><img src="assets/readme/light/h-screenshots.svg" alt="Verified Screenshots" width="100%"></picture></h2>
 
 <p align="center">
   <img src="assets/screenshots/month_view.png" width="31%" alt="Month View" />
@@ -31,7 +47,26 @@ This project takes **Samsung Calendar `12.7.06.13`** from One UI 9 and makes it 
 
 ---
 
-## How This Port Works
+<h2 id="how-this-port-works"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-architecture.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-architecture.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-architecture.svg"><img src="assets/readme/light/h-architecture.svg" alt="How This Port Works" width="100%"></picture></h2>
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-shims.svg"><img src="assets/readme/light/card-shims.svg" alt="Android 12+ Bootclasspath Shims" width="100%"></picture>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-calbridge.svg"><img src="assets/readme/light/card-calbridge.svg" alt="Cross-OEM CalendarProvider" width="100%"></picture>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-animator.svg"><img src="assets/readme/light/card-animator.svg" alt="120Hz Refresh Lock &amp; Curves" width="100%"></picture>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-spr.svg"><img src="assets/readme/light/card-spr.svg" alt="SPR\0 Drawable Decoding" width="100%"></picture>
+    </td>
+  </tr>
+</table>
 
 ### 1. Android 12+ Backport (`minSdk 31`) & Samsung Bootclasspath Shims
 One UI 9 compiles against Android 15/16 (`API 35/36`) plus Samsung's private framework JARs (`sem.*`). Running that bytecode unmodified on Android 12 or non-Samsung ROMs triggers `NoClassDefFoundError` and `NoSuchMethodError` across the app lifecycle.
@@ -61,7 +96,7 @@ Some bundled `.bmp` resources in One UI apps aren't standard Windows bitmaps —
 
 ---
 
-## Installation
+<h2 id="installation"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-install.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-install.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-install.svg"><img src="assets/readme/light/h-install.svg" alt="Installation Guide" width="100%"></picture></h2>
 
 1. Grab **`SamsungCalendar-OneUI9.apk`** from [**Releases**](../../releases/latest) (or directly from [`apk/SamsungCalendar-OneUI9.apk`](apk/SamsungCalendar-OneUI9.apk)).
 2. Enable **Install unknown apps** for your browser or file manager if Android asks.
@@ -73,14 +108,14 @@ Some bundled `.bmp` resources in One UI apps aren't standard Windows bitmaps —
 
 ---
 
-## What Works & Known Limitations
+<h2 id="what-works--known-limitations"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-compat.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-compat.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-compat.svg"><img src="assets/readme/light/h-compat.svg" alt="What Works &amp; Known Limitations" width="100%"></picture></h2>
 
 - **Works out of the box**: Month / Week / Day / Year / Agenda views, event creation & editing, recurring rules, reminders & notifications, Google/Exchange sync (via Android's system sync adapters), calendar visibility toggles, dark/light theme, and 120Hz scrolling/transitions.
 - **Not functional off-OneUI**: Samsung-cloud-only features that depend on Samsung Account, Bixby Routines, Samsung Reminder app sync, or Sticker Center will gracefully stay inactive when those system services aren't installed on the device.
 
 ---
 
-## Building & Patching Notes
+<h2 id="building--patching-notes"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-build.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-build.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-build.svg"><img src="assets/readme/light/h-build.svg" alt="Building &amp; Patching Notes" width="100%"></picture></h2>
 
 Everything needed to inspect or reproduce the compatibility patches is checked into this repo:
 
@@ -103,7 +138,7 @@ If you run the Python tooling against your own decompiled tree, set `SAMSUNG_POR
 
 ---
 
-## Build Metadata
+<h2 id="build-metadata"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-metadata.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-metadata.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-metadata.svg"><img src="assets/readme/light/h-metadata.svg" alt="Build Metadata &amp; License" width="100%"></picture></h2>
 
 | Field | Value |
 | :--- | :--- |
@@ -113,6 +148,6 @@ If you run the Python tooling against your own decompiled tree, set `SAMSUNG_POR
 | **APK Size** | `54.25 MB` (`56,886,003` bytes) |
 | **SHA-256** | `396AB8DB78C5BDBB2E0968C98A13709ACF07A10AC881D5868B062F49143F87F1` |
 
-## License
+### License
 
 Refer to [LICENSE](LICENSE). All original Samsung One UI assets and binaries remain the intellectual property of Samsung Electronics Co., Ltd.
